@@ -1,0 +1,125 @@
+body {
+    background-image: url('Res.jpg');
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+}
+
+.project_heading {
+    color: #fe1c03;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game_container {
+    flex-direction: row;
+    height: 120vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+
+.card {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: transparent;
+    width: 350px;
+    height: 300px;
+    margin: auto;
+    perspective: 1000px;
+    padding: 20px;
+  }
+
+  .button {
+    position:relative;
+    margin: 350px 45%;
+    padding: 10px;    
+    flex-direction: row;
+    z-index: 200;
+}
+.country_name_1 {
+    background-color: #82ccdd;
+    width: 50%;
+    height: 50vh;
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+    flex-direction: column;
+    line-height: 40px;
+} 
+
+  .cardContent {
+    position: relative;
+    width: 440px;
+    height: 320px;
+    text-align: center;
+    transition: all 0.8s ease;
+    transform-style: preserve-3d;
+  }
+
+  .card:hover .cardContent {
+    rotate: y 180deg;
+  }
+  .card:hover .cardContent2 {
+    rotate: y 180deg;
+  }
+
+.cardFront,
+.cardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.cardFront {
+  background-color:  #5dabcd;
+}
+  .cardBack {
+    background-color:  #9d00ff;
+    rotate: y 180deg;
+  }
+  
+  .cardBack h3 {
+    padding-top: 25%;
+    font-size: 1.5em; 
+    color: #bc2e1e;
+    /* font-size: 18px; */
+  }
+  .cardBack p {
+    font-size: 1.25em;
+    font-weight: 800;
+    padding: 0 20px;
+    text-align: center;
+    position: absolute;
+    transform: translate(60%, -10%);
+  }
+
+
+
+#countryflag1, #countryflag2 {
+    font-size: 120px;
+}
+
+
+h1 {
+    text-align: center;
+    font: bold 80px Sans-Serif;
+    padding: 40px 0;
+
+}
